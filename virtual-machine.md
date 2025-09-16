@@ -10,7 +10,7 @@ I will start simple with Ubuntu server LTS 24.04.3 VMs on my laptop with type 2 
 The fisrt step is download the iso file from the official site. The general setting that I usually use is 2 core CPU, 4GB RAM, 20GB disk.
 
 ### Networking  
-I prefer to use bridge mode for networking, it will make my VM a part of LAN that my laptop is connected. My VM will able to get access to the internet while get IP from DHCP so I can SSH instead of using VMware interface.
+I prefer to use bridge mode for networking, it will make my VM a part of LAN that my laptop is connected. My VM will able to get access to the internet while get IP from DHCP so I can ssh instead of using VMware interface.
 
 **During boot up, when it ask for network interface, choose `edit IPv4` > `IPv4 Method` > `Automatic (DHCP)`
 
@@ -22,7 +22,10 @@ Use `ip a` to see the current IP. After that add these host into the host ssh co
 
 <pre>
 ssh-keygen -t ed25519 -C "any comment" <br>
-ssh-copy-id -i &lt;key path&gt; &lt;host1&gt; &lt;host2&gt; &lt;host3&gt; ...
+ssh-copy-id -i &lt;key path&gt; &lt;vm address or alias&gt;
 </pre>
 
+Then add the argument `IdentityFile <private key path>` to the config file and we're done.
+
+See [SSH best practice](ssh.md)
 
