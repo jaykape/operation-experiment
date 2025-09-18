@@ -4,7 +4,7 @@ This repo is a blog post style for my experimentation on operation stuffs.
 
 :desktop_computer: [Getting started with virtual machine](virtual-machine.md)
 
-:U+2638: [Kubernetes HomeLab](kubernetes.md)
+&#x2638; [Kubernetes HomeLab](kubernetes.md)
 
 ### Useful Information
 
