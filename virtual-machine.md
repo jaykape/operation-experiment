@@ -29,3 +29,8 @@ Then add the argument `IdentityFile <private key path>` to the config file and w
 
 See [SSH best practice](ssh.md)
 
+### Useful information
+
+- How resources defined in configuration are allocated to VM?
+ 
+
