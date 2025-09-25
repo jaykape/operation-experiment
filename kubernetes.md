@@ -23,9 +23,9 @@
 
 ---
 
-# 📟 1. Download necessary tools and setup
+# 📘 1. Download necessary tools and setup
 
-## 📟 1.1. Update package manager and HTTPS set up
+## 📘 1.1. Update package manager and HTTPS set up
 
 <pre>
 sudo apt update
@@ -37,7 +37,7 @@ sudo apt install -y apt-transport-https ca-certificates curl
 - `ca-certificates` verify TLS of the other ends.
 - `curl` fetch/send data over the internet.
 
-## 📟 1.2. Disable swap
+## 📘 1.2. Disable swap
 
   swap = disk space used as extra RAM when real RAM is full.
 
@@ -60,7 +60,7 @@ sudo apt install -y apt-transport-https ca-certificates curl
   - [Swap Off - why is it necessary?](https://discuss.kubernetes.io/t/swap-off-why-is-it-necessary/6879)
   - [Kubelet/Kubernetes should work with Swap Enabled](https://github.com/kubernetes/kubernetes/issues/53533)
 
-## 📟 1.3. Networking Configuration
+## 📘 1.3. Networking Configuration
 
   *To be honest, this part I still didn't get that 100%.
   But we have to run below snippet.
@@ -106,10 +106,10 @@ Enables packet forwarding between network interfaces. Without this, your node wo
 
   - `--system` = reload all config files.
 
-## 📟 1.4. Install & configure containerd
+## 📘 1.4. Install & configure containerd
 
 
-## 📟 1.5. Install kubeadm, kubelet, kubectl
+## 📘 1.5. Install kubeadm, kubelet, kubectl
 
 <pre>
 sudo mkdir -p /etc/apt/keyrings
@@ -127,7 +127,7 @@ optionally enable kubelet (it will sit waiting until kubeadm configures it)
 
 <pre>sudo systemctl enable --now kubelet</pre>
 
-## 📟 1.6.  (on master node)
+## 📘 1.6.  (on master node)
 
 <pre>
 sudo kubeadm init --pod-network-cidr=192.168.0.0/16 --upload-certs
@@ -159,7 +159,7 @@ kubectl get nodes
 
 Done! Now my cluster is ready.
 
-## 📟 1.7. (optional) Download Git
+## 📘 1.7. (optional) Download Git
 
 <pre>sudo apt install git -y</pre>
 
@@ -169,7 +169,7 @@ I use git to download manifest files (by cloning this repo) to do lab.
 
 <pre>sudo resolvectl dns &lt;interface name e.g. ens33&gt; 8.8.8.8 8.8.4.4</pre>
 
-## 📟 1.8. (optional) Download Helm
+## 📘 1.8. (optional) Download Helm
 
 <pre>curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash</pre>
 
