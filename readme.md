@@ -6,7 +6,9 @@ This repo is a blog post style for my experimentation on operation stuffs.
 
 - [Getting started with container](container.md)
 
--  [Kubernetes HomeLab](kubernetes.md)
+- [Kubernetes HomeLab](kubernetes.md)
+
+- [Bash scripts](bash.md)
 
 ### Useful Information
 
