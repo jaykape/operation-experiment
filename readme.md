@@ -12,7 +12,7 @@ This repo is a blog post style for my experimentation on operation stuffs.
 
 - [Bash scripts](bash.md)
 
-### Useful Information
+### Random Info
 
 - [Basic Linux Information](linux.md)
 
